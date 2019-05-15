@@ -1,7 +1,5 @@
 <?php
 
-require_once(SITE_ROOT . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php');
-
 use Phinx\Console\PhinxApplication;
 use Phinx\Wrapper\TextWrapper;
 
