@@ -1,0 +1,14 @@
+ServerSignature Off
+IndexIgnore *
+
+RewriteEngine on
+RewriteBase /
+
+RewriteRule ^(/?)?$ index.php [L,QSA]
+RewriteRule ^([0-9a-zA-Z/_-]*).html$ index.php?lap=endpage&url=$1 [L,QSA]
+RewriteRule ^([0-9a-zA-Z/_-]*)$ index.php?lap=listpage&url=$1 [L,QSA]
+
+ErrorDocument 404 /index.php?lap=404
+
+php_value post_max_size 21M
+php_value upload_max_filesize 20M

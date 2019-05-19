@@ -11,4 +11,5 @@ require_once(SITE_ROOT . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 
 
 $baseHref = 'http://' . $_SERVER["HTTP_HOST"] . '/';
 
-//require_once(__DIR__ . '/../config/server.config.php');
+require_once('_db.php');
+require_once('_modelList.php');

@@ -10,7 +10,8 @@ return [
             "adapter" => "sqlite",
             "name" => './db/p92',
             "charset" => "utf8",
-            "suffix" => ".db"
+            "suffix" => ".db",
+            //'memory' => true
         ]
     ]
 ];
