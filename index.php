@@ -1,11 +1,12 @@
-<?php session_start(); ?>
-<!DOCTYPE html>
-<html>
 <?php
-
+session_start();
 require_once('./include/_init.php');
 require_once('./include/_migration.php');
+?>
+<!DOCTYPE html>
+<html>
 
+<?php
 require_once('./include/_contentType.php');
 require_once('./main/html_header.php');
 require_once('./main/html_body.php');

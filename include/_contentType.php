@@ -7,6 +7,7 @@ if (isset($_GET['url'])) {
     $url = $_GET['url'];
 }
 
+
 if ($url == '') {
     $pageType = 'index';
 } else {
