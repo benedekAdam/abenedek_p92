@@ -1,5 +1,4 @@
 <?php
-
 class Navbar
 {
 
@@ -9,9 +8,8 @@ class Navbar
 
     public function __construct()
     {
-        $this->isLoggedIn = false;
-        $this->isAdminUser = false;
-        return $this->renderNavBar();
+        $this->isLoggedIn = (isset($_SESSION['loggedin']) && $_SESSION['loggedin']);
+        $this->isAdminUser = isset($_SESSION['adminuser']);
     }
 
     public function renderNavBar()

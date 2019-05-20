@@ -1,6 +1,6 @@
 <li class="nav-item active">
-    <a class="nav-link" href="<?= Profile::getUrl() ?>">My profile</a>
+    <a class="nav-link" href="<?= User::getProfileUrl() ?>">My profile</a>
 </li>
 <li class="nav-item active">
-    <a class="nav-link" href="<?= Logout::getUrl() ?>">Logout</a>
+    <a class="nav-link" href="<?= User::getLogoutUrl() ?>">Logout</a>
 </li>

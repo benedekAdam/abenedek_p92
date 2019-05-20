@@ -7,6 +7,12 @@
         case 'login':
             $template = 'login' . DIRECTORY_SEPARATOR . 'form.php';
             break;
+        case 'registration':
+            $template = 'registration' . DIRECTORY_SEPARATOR . 'form.php';
+            break;
+        case 'privacy-policy':
+            $template = 'privacy-policy.php';
+            break;
         case 'index':
         default:
             $template = 'startpage.php';
@@ -15,5 +21,4 @@
     $content = new View($template);
     echo $content->render();
     ?>
-    <script type="text/javascript" src="<?= $baseHref ?>dist/bootstrap/js/bootstrap.min.js"></script>
 </body>

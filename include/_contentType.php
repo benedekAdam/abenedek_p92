@@ -16,11 +16,14 @@ if ($url == '') {
         case 'login':
             $pageType = 'login';
             break;
-        case 'register':
-            $pageType = 'register';
+        case 'registration':
+            $pageType = 'registration';
             break;
         case 'logout':
             $pageType = 'logout';
+            break;
+        case 'privacy-policy':
+            $pageType = 'privacy-policy';
             break;
         default:
             $pageType = 'index';
